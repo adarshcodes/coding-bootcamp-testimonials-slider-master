@@ -1,0 +1,68 @@
+.main-container {
+  height: 80rem;
+  background-image: url('../images/pattern-curve.svg'), url('../images/pattern-bg.svg'), url("../images/pattern-quotes.svg");
+  background-position: bottom 0 left 0, bottom 9.4rem right 7.4rem, top 21.3rem left 26rem;
+  background-repeat: no-repeat;
+}
+
+.components {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &__text-holder {
+    position: relative;
+    left: -23.3rem;
+    z-index: 1;
+    width: 45%;
+    line-height: 4.4rem;
+
+    .quote {
+      margin: 4rem 0 2rem;
+    }
+
+    .name-para {
+      font-size: 2rem;
+    }
+
+    .name {
+      font-weight: bold;
+      margin-right: 2rem;
+    }
+  }
+
+  &__img-container {
+    position: absolute;
+    top: 11.3rem;
+    right: 16.4rem;
+
+    .photo {
+      border-radius: 0.5rem;
+      position: relative;
+    }
+
+    .button-container {
+      position: absolute;
+      bottom: -1.9rem;
+      left: 6.35rem;
+      width: 11.2rem;
+      height: 5.5rem;
+      background: blue;
+      border-radius: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: stretch;
+    }
+  }
+}
