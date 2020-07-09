@@ -19,19 +19,6 @@
     z-index: 1;
     width: 45%;
     line-height: 4.4rem;
-
-    .quote {
-      margin: 4rem 0 2rem;
-    }
-
-    .name-para {
-      font-size: 2rem;
-    }
-
-    .name {
-      font-weight: bold;
-      margin-right: 2rem;
-    }
   }
 
   &__img-container {
@@ -39,9 +26,12 @@
     top: 11.3rem;
     right: 16.4rem;
 
+
     .photo {
       border-radius: 0.5rem;
       position: relative;
+      box-shadow: 0px 9px 37px -14px rgba(191,191,191,1);
+      animation: img-move .8s;
     }
 
     .button-container {
@@ -50,11 +40,13 @@
       left: 6.35rem;
       width: 11.2rem;
       height: 5.5rem;
-      background: blue;
+      background: $color-primary-white;
       border-radius: 3rem;
       display: flex;
       justify-content: center;
       align-items: center;
+      box-shadow: 0px 9px 37px -14px rgba(191,191,191,1);
+      animation: button-move .8s;
     }
 
     .btn {
@@ -63,6 +55,16 @@
       justify-content: center;
       align-items: center;
       align-self: stretch;
+      cursor: pointer;
+      transition: transform .5s;
+    }
+
+    .next-btn:hover {
+        transform: translateX(-.2rem);
+    }
+
+    .previous-btn:hover {
+        transform: translateX(.2rem);
     }
   }
 }

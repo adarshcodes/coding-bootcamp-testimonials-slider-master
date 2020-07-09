@@ -1,0 +1,21 @@
+.quote {
+  margin: 4rem 0 2rem;
+  color: $color-primary-blue;
+  animation: para-move .8s;
+}
+
+.name-para {
+  font-size: 2rem;
+}
+
+.name {
+  font-weight: bold;
+  margin-right: 2rem;
+  color: $color-primary-blue;
+  animation: name-move .8s;
+}
+
+.job {
+  color: $color-secondary-blue;
+  animation: name-move .8s;
+}
